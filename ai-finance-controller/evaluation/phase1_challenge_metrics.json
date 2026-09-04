@@ -1,0 +1,670 @@
+{
+  "benchmark": {
+    "seed": 42,
+    "samples_per_category_per_group": 12,
+    "total_rows": 324,
+    "training_used": false,
+    "model_path": "models\\categorization_pipeline.joblib",
+    "groups": [
+      "known_merchant_noisy_description",
+      "unseen_merchant",
+      "ambiguous_description"
+    ]
+  },
+  "groups": {
+    "known_merchant_noisy_description": {
+      "rows": 108,
+      "category_distribution": {
+        "Education": 12,
+        "Entertainment": 12,
+        "Food": 12,
+        "Healthcare": 12,
+        "Rent": 12,
+        "Salary": 12,
+        "Shopping": 12,
+        "Transport": 12,
+        "Utilities": 12
+      },
+      "metrics": {
+        "accuracy": 0.6388888888888888,
+        "macro_precision": 0.6428727046374105,
+        "macro_recall": 0.6388888888888888,
+        "macro_f1": 0.5874049639206276,
+        "weighted_f1": 0.5874049639206276,
+        "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       1.00      1.00      1.00        12\nEntertainment       0.57      1.00      0.73        12\n         Food       0.73      0.92      0.81        12\n   Healthcare       1.00      0.42      0.59        12\n         Rent       1.00      0.50      0.67        12\n       Salary       0.00      0.00      0.00        12\n     Shopping       0.39      0.92      0.55        12\n    Transport       0.59      0.83      0.69        12\n    Utilities       0.50      0.17      0.25        12\n\n     accuracy                           0.64       108\n    macro avg       0.64      0.64      0.59       108\n weighted avg       0.64      0.64      0.59       108\n",
+        "classification_report_dict": {
+          "Education": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Entertainment": {
+            "precision": 0.5714285714285714,
+            "recall": 1.0,
+            "f1-score": 0.7272727272727273,
+            "support": 12.0
+          },
+          "Food": {
+            "precision": 0.7333333333333333,
+            "recall": 0.9166666666666666,
+            "f1-score": 0.8148148148148148,
+            "support": 12.0
+          },
+          "Healthcare": {
+            "precision": 1.0,
+            "recall": 0.4166666666666667,
+            "f1-score": 0.5882352941176471,
+            "support": 12.0
+          },
+          "Rent": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 12.0
+          },
+          "Salary": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Shopping": {
+            "precision": 0.39285714285714285,
+            "recall": 0.9166666666666666,
+            "f1-score": 0.55,
+            "support": 12.0
+          },
+          "Transport": {
+            "precision": 0.5882352941176471,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.6896551724137931,
+            "support": 12.0
+          },
+          "Utilities": {
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.25,
+            "support": 12.0
+          },
+          "accuracy": 0.6388888888888888,
+          "macro avg": {
+            "precision": 0.6428727046374105,
+            "recall": 0.6388888888888888,
+            "f1-score": 0.5874049639206276,
+            "support": 108.0
+          },
+          "weighted avg": {
+            "precision": 0.6428727046374105,
+            "recall": 0.6388888888888888,
+            "f1-score": 0.5874049639206276,
+            "support": 108.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            5,
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            5,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            10,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            3,
+            2,
+            2
+          ]
+        ],
+        "classes": [
+          "Education",
+          "Entertainment",
+          "Food",
+          "Healthcare",
+          "Rent",
+          "Salary",
+          "Shopping",
+          "Transport",
+          "Utilities"
+        ],
+        "total_test_samples": 108
+      },
+      "confidence_distribution": {
+        "min": 0.1870322784940352,
+        "p10": 0.21535496768720383,
+        "median": 0.5413645261144014,
+        "mean": 0.6121706825775625,
+        "p90": 0.9845383906133781,
+        "max": 0.9992357901923007,
+        "below_confidence_threshold_pct": {
+          "0.5": 38.88888888888889,
+          "0.6": 52.77777777777778,
+          "0.7": 55.55555555555556,
+          "0.8": 55.55555555555556
+        }
+      }
+    },
+    "unseen_merchant": {
+      "rows": 108,
+      "category_distribution": {
+        "Education": 12,
+        "Entertainment": 12,
+        "Food": 12,
+        "Healthcare": 12,
+        "Rent": 12,
+        "Salary": 12,
+        "Shopping": 12,
+        "Transport": 12,
+        "Utilities": 12
+      },
+      "metrics": {
+        "accuracy": 0.1111111111111111,
+        "macro_precision": 0.06900953984287317,
+        "macro_recall": 0.1111111111111111,
+        "macro_f1": 0.08193440546381724,
+        "weighted_f1": 0.08193440546381724,
+        "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       0.00      0.00      0.00        12\nEntertainment       0.11      0.25      0.15        12\n         Food       0.20      0.17      0.18        12\n   Healthcare       0.00      0.00      0.00        12\n         Rent       0.11      0.25      0.15        12\n       Salary       0.00      0.00      0.00        12\n     Shopping       0.14      0.25      0.18        12\n    Transport       0.06      0.08      0.07        12\n    Utilities       0.00      0.00      0.00        12\n\n     accuracy                           0.11       108\n    macro avg       0.07      0.11      0.08       108\n weighted avg       0.07      0.11      0.08       108\n",
+        "classification_report_dict": {
+          "Education": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Entertainment": {
+            "precision": 0.1111111111111111,
+            "recall": 0.25,
+            "f1-score": 0.15384615384615385,
+            "support": 12.0
+          },
+          "Food": {
+            "precision": 0.2,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.18181818181818182,
+            "support": 12.0
+          },
+          "Healthcare": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Rent": {
+            "precision": 0.1111111111111111,
+            "recall": 0.25,
+            "f1-score": 0.15384615384615385,
+            "support": 12.0
+          },
+          "Salary": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Shopping": {
+            "precision": 0.13636363636363635,
+            "recall": 0.25,
+            "f1-score": 0.17647058823529413,
+            "support": 12.0
+          },
+          "Transport": {
+            "precision": 0.0625,
+            "recall": 0.08333333333333333,
+            "f1-score": 0.07142857142857142,
+            "support": 12.0
+          },
+          "Utilities": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "accuracy": 0.1111111111111111,
+          "macro avg": {
+            "precision": 0.06900953984287317,
+            "recall": 0.1111111111111111,
+            "f1-score": 0.08193440546381724,
+            "support": 108.0
+          },
+          "weighted avg": {
+            "precision": 0.06900953984287318,
+            "recall": 0.1111111111111111,
+            "f1-score": 0.08193440546381724,
+            "support": 108.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            2,
+            0,
+            3,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            0,
+            3,
+            0,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            2,
+            0,
+            3,
+            0,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            0,
+            3,
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            3,
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            3,
+            0,
+            3,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            3,
+            0,
+            3,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            0,
+            3,
+            0,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            3,
+            0,
+            3,
+            0,
+            1,
+            2,
+            0
+          ]
+        ],
+        "classes": [
+          "Education",
+          "Entertainment",
+          "Food",
+          "Healthcare",
+          "Rent",
+          "Salary",
+          "Shopping",
+          "Transport",
+          "Utilities"
+        ],
+        "total_test_samples": 108
+      },
+      "confidence_distribution": {
+        "min": 0.16399589337165882,
+        "p10": 0.2113736866828171,
+        "median": 0.2591337869414562,
+        "mean": 0.40631725564360405,
+        "p90": 0.6889474691805155,
+        "max": 0.6889474691805155,
+        "below_confidence_threshold_pct": {
+          "0.5": 50.92592592592593,
+          "0.6": 75.0,
+          "0.7": 100.0,
+          "0.8": 100.0
+        }
+      }
+    },
+    "ambiguous_description": {
+      "rows": 108,
+      "category_distribution": {
+        "Education": 12,
+        "Entertainment": 12,
+        "Food": 12,
+        "Healthcare": 12,
+        "Rent": 12,
+        "Salary": 12,
+        "Shopping": 12,
+        "Transport": 12,
+        "Utilities": 12
+      },
+      "metrics": {
+        "accuracy": 0.09259259259259259,
+        "macro_precision": 0.031897261245920246,
+        "macro_recall": 0.09259259259259259,
+        "macro_f1": 0.046279095059582866,
+        "weighted_f1": 0.04627909505958287,
+        "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       0.00      0.00      0.00        12\nEntertainment       0.00      0.00      0.00        12\n         Food       0.00      0.00      0.00        12\n   Healthcare       0.00      0.00      0.00        12\n         Rent       0.09      0.42      0.15        12\n       Salary       0.00      0.00      0.00        12\n     Shopping       0.16      0.33      0.22        12\n    Transport       0.03      0.08      0.05        12\n    Utilities       0.00      0.00      0.00        12\n\n     accuracy                           0.09       108\n    macro avg       0.03      0.09      0.05       108\n weighted avg       0.03      0.09      0.05       108\n",
+        "classification_report_dict": {
+          "Education": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Entertainment": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Food": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Healthcare": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Rent": {
+            "precision": 0.09259259259259259,
+            "recall": 0.4166666666666667,
+            "f1-score": 0.15151515151515152,
+            "support": 12.0
+          },
+          "Salary": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Shopping": {
+            "precision": 0.16,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.21621621621621623,
+            "support": 12.0
+          },
+          "Transport": {
+            "precision": 0.034482758620689655,
+            "recall": 0.08333333333333333,
+            "f1-score": 0.04878048780487805,
+            "support": 12.0
+          },
+          "Utilities": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "accuracy": 0.09259259259259259,
+          "macro avg": {
+            "precision": 0.031897261245920246,
+            "recall": 0.09259259259259259,
+            "f1-score": 0.046279095059582866,
+            "support": 108.0
+          },
+          "weighted avg": {
+            "precision": 0.031897261245920246,
+            "recall": 0.09259259259259259,
+            "f1-score": 0.04627909505958287,
+            "support": 108.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            3,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            3,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            1,
+            3,
+            0
+          ]
+        ],
+        "classes": [
+          "Education",
+          "Entertainment",
+          "Food",
+          "Healthcare",
+          "Rent",
+          "Salary",
+          "Shopping",
+          "Transport",
+          "Utilities"
+        ],
+        "total_test_samples": 108
+      },
+      "confidence_distribution": {
+        "min": 0.17702191058810715,
+        "p10": 0.17702191058810715,
+        "median": 0.23078657398772542,
+        "mean": 0.3476327796430656,
+        "p90": 0.6889474691805155,
+        "max": 0.6889474691805155,
+        "below_confidence_threshold_pct": {
+          "0.5": 73.14814814814815,
+          "0.6": 73.14814814814815,
+          "0.7": 100.0,
+          "0.8": 100.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "split": {
+    "method": "GroupShuffleSplit grouped by exact transaction_description",
+    "test_size_requested": 0.25,
+    "random_state": 42,
+    "train_rows": 9429,
+    "test_rows": 2571,
+    "train_unique_descriptions": 5271,
+    "test_unique_descriptions": 1757,
+    "train_test_description_overlap": 0
+  },
+  "keyword_rules": {
+    "Transport": [
+      "uber",
+      "olacabs",
+      "ola",
+      "rapido",
+      "indianoil",
+      "delhimetro"
+    ],
+    "Entertainment": [
+      "netflix",
+      "spotify",
+      "bookmyshow"
+    ],
+    "Utilities": [
+      "airtel",
+      "municipalwater",
+      "jiofiber",
+      "bescom"
+    ],
+    "Food": [
+      "swiggy",
+      "zomato",
+      "dominos",
+      "starbucks",
+      "localtiffins"
+    ],
+    "Rent": [
+      "landlord",
+      "rent payment",
+      " rent "
+    ],
+    "Salary": [
+      "employercorp",
+      "salary",
+      "payroll"
+    ],
+    "Education": [
+      "udemy",
+      "coursera"
+    ],
+    "Healthcare": [
+      "practo",
+      "apollo"
+    ],
+    "Shopping": [
+      "amazon",
+      "flipkart",
+      "myntra",
+      "reliancetrends",
+      "localkirana"
+    ]
+  },
+  "keyword_baseline": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       1.00      1.00      1.00       161\nEntertainment       1.00      1.00      1.00       174\n         Food       1.00      1.00      1.00       292\n   Healthcare       1.00      1.00      1.00       355\n         Rent       1.00      1.00      1.00       253\n       Salary       1.00      1.00      1.00       273\n     Shopping       1.00      1.00      1.00       304\n    Transport       1.00      1.00      1.00       338\n    Utilities       1.00      1.00      1.00       421\n\n     accuracy                           1.00      2571\n    macro avg       1.00      1.00      1.00      2571\n weighted avg       1.00      1.00      1.00      2571\n",
+    "classification_report_dict": {
+      "Education": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 161.0
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 174.0
+      },
+      "Food": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 292.0
+      },
+      "Healthcare": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "Rent": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 253.0
+      },
+      "Salary": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 273.0
+      },
+      "Shopping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 304.0
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 338.0
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 421.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2571.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2571.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        161,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        174,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        355,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        253,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        273,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        304,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        421
+      ]
+    ],
+    "classes": [
+      "Education",
+      "Entertainment",
+      "Food",
+      "Healthcare",
+      "Rent",
+      "Salary",
+      "Shopping",
+      "Transport",
+      "Utilities"
+    ],
+    "total_test_samples": 2571
+  },
+  "tfidf_logistic_regression": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       1.00      1.00      1.00       161\nEntertainment       1.00      1.00      1.00       174\n         Food       1.00      1.00      1.00       292\n   Healthcare       1.00      1.00      1.00       355\n         Rent       1.00      1.00      1.00       253\n       Salary       1.00      1.00      1.00       273\n     Shopping       1.00      1.00      1.00       304\n    Transport       1.00      1.00      1.00       338\n    Utilities       1.00      1.00      1.00       421\n\n     accuracy                           1.00      2571\n    macro avg       1.00      1.00      1.00      2571\n weighted avg       1.00      1.00      1.00      2571\n",
+    "classification_report_dict": {
+      "Education": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 161.0
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 174.0
+      },
+      "Food": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 292.0
+      },
+      "Healthcare": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "Rent": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 253.0
+      },
+      "Salary": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 273.0
+      },
+      "Shopping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 304.0
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 338.0
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 421.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2571.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2571.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        161,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        174,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        355,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        253,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        273,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        304,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        338,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        421
+      ]
+    ],
+    "classes": [
+      "Education",
+      "Entertainment",
+      "Food",
+      "Healthcare",
+      "Rent",
+      "Salary",
+      "Shopping",
+      "Transport",
+      "Utilities"
+    ],
+    "total_test_samples": 2571
+  },
+  "errors": {
+    "keyword_baseline": [],
+    "tfidf_logistic_regression": []
+  },
+  "manual_predictions": [
+    {
+      "transaction": "SWIGGY*BLR0091 BANGALORE",
+      "predicted_category": "Food",
+      "confidence": 0.9988
+    },
+    {
+      "transaction": "UBER INDIA",
+      "predicted_category": "Transport",
+      "confidence": 0.9921
+    },
+    {
+      "transaction": "AMAZON PAY",
+      "predicted_category": "Shopping",
+      "confidence": 0.1802
+    },
+    {
+      "transaction": "BESCOM ELECTRICITY BILL",
+      "predicted_category": "Shopping",
+      "confidence": 0.1802
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "evaluation_timestamp": "2026-08-27T12:10:52.497525+00:00",
+  "total_evaluated_cases": 2000,
+  "correct_cases": 1786,
+  "incorrect_cases": 214,
+  "error_rate": 0.107,
+  "error_count_by_true_status": {
+    "DUPLICATE": 100,
+    "AMBIGUOUS": 100,
+    "UNMATCHED_BANK": 10,
+    "MATCH": 4
+  },
+  "error_count_by_predicted_status": {
+    "MATCH": 100,
+    "AMOUNT_MISMATCH": 100,
+    "AMBIGUOUS": 10,
+    "DUPLICATE": 4
+  },
+  "error_count_by_error_classification": {
+    "FALSE_MATCH": 100,
+    "AMBIGUOUSNESS_ERROR": 100,
+    "WRONG_EXCEPTION_TYPE": 10,
+    "MISSED_MATCH": 4
+  },
+  "ground_truth_ambiguous_case_analysis": {
+    "total_gt_ambiguous_cases": 100,
+    "predicted_status_distribution_for_gt_ambiguous": {
+      "AMOUNT_MISMATCH": 100
+    },
+    "explanation": "All 100 ground-truth AMBIGUOUS cases had reference matches with amounts that differed, causing the reference match + amount difference stage (Stage 3) to deterministically classify them as AMOUNT_MISMATCH before reaching the fuzzy candidate ambiguity stage (Stage 4/5)."
+  },
+  "ground_truth_duplicate_case_analysis": {
+    "total_gt_duplicate_cases": 100,
+    "predicted_status_distribution_for_gt_duplicate": {
+      "MATCH": 100
+    },
+    "explanation": "In the ground-truth benchmark, each DUPLICATE case references the primary bank transaction ID (e.g. SYNTH-BANK-000009), which the Day 1 engine successfully resolved as MATCH with the ledger, while the duplicate bank record (SYNTH-BANK-DUP-000009) was correctly emitted as DUPLICATE in the source-level output. In single-transaction case mapping, the primary transaction is evaluated."
+  },
+  "representative_error_examples": [
+    {
+      "error_classification": "FALSE_MATCH",
+      "case_id": "SYNTH-CASE-000009",
+      "bank_txn_id": "SYNTH-BANK-000009",
+      "ledger_id": "SYNTH-LEDGER-000009",
+      "true_status": "DUPLICATE",
+      "predicted_status": "MATCH",
+      "true_exception_type": "DUPLICATE",
+      "match_method": "EXACT_REFERENCE_AMOUNT",
+      "reason": "Reference 'UPI974622', amount (\u20b93009.72), and direction (CREDIT) matched exactly after normalization with timestamp diff of 5.0 mins."
+    },
+    {
+      "error_classification": "FALSE_MATCH",
+      "case_id": "SYNTH-CASE-000013",
+      "bank_txn_id": "SYNTH-BANK-000013",
+      "ledger_id": "SYNTH-LEDGER-000013",
+      "true_status": "DUPLICATE",
+      "predicted_status": "MATCH",
+      "true_exception_type": "DUPLICATE",
+      "match_method": "EXACT_REFERENCE_AMOUNT",
+      "reason": "Reference 'UPI697842', amount (\u20b91885.72), and direction (CREDIT) matched exactly after normalization with timestamp diff of 14.0 mins."
+    },
+    {
+      "error_classification": "WRONG_EXCEPTION_TYPE",
+      "case_id": "SYNTH-CASE-000085",
+      "bank_txn_id": "SYNTH-BANK-000085",
+      "ledger_id": "",
+      "true_status": "UNMATCHED_BANK",
+      "predicted_status": "AMBIGUOUS",
+      "true_exception_type": "MISSING_LEDGER",
+      "match_method": "AMBIGUOUS_LOW_CONFIDENCE",
+      "reason": "Ambiguous match: Competing ledger candidates found with close scores: [SYNTH-LEDGER-001041 (score 0.701)]. Top candidate reference 'UPI619004' has similarity 0.56."
+    },
+    {
+      "error_classification": "WRONG_EXCEPTION_TYPE",
+      "case_id": "SYNTH-CASE-000119",
+      "bank_txn_id": "SYNTH-BANK-000119",
+      "ledger_id": "",
+      "true_status": "UNMATCHED_BANK",
+      "predicted_status": "AMBIGUOUS",
+      "true_exception_type": "MISSING_LEDGER",
+      "match_method": "AMBIGUOUS_LOW_CONFIDENCE",
+      "reason": "Ambiguous match: Competing ledger candidates found with close scores: [SYNTH-LEDGER-000600 (score 0.740)]. Top candidate reference 'UPI346464' has similarity 0.67."
+    },
+    {
+      "error_classification": "MISSED_MATCH",
+      "case_id": "SYNTH-CASE-000096",
+      "bank_txn_id": "SYNTH-BANK-000096",
+      "ledger_id": "SYNTH-LEDGER-000096",
+      "true_status": "MATCH",
+      "predicted_status": "DUPLICATE",
+      "true_exception_type": "NONE",
+      "match_method": "DUPLICATE_MULTIPLE_BANK",
+      "reason": "Duplicate bank transaction detected sharing reference 'UPI918816', amount \u20b9733.48, and direction CREDIT with primary txn SYNTH-BANK-000203."
+    },
+    {
+      "error_classification": "MISSED_MATCH",
+      "case_id": "SYNTH-CASE-000468",
+      "bank_txn_id": "SYNTH-BANK-000468",
+      "ledger_id": "SYNTH-LEDGER-000468",
+      "true_status": "MATCH",
+      "predicted_status": "DUPLICATE",
+      "true_exception_type": "NONE",
+      "match_method": "DUPLICATE_MULTIPLE_BANK",
+      "reason": "Duplicate bank transaction detected sharing reference 'UPI756717', amount \u20b92811.67, and direction CREDIT with primary txn SYNTH-BANK-001618."
+    },
+    {
+      "error_classification": "AMBIGUOUSNESS_ERROR",
+      "case_id": "SYNTH-CASE-000098",
+      "bank_txn_id": "SYNTH-BANK-000098",
+      "ledger_id": "SYNTH-LEDGER-000098",
+      "true_status": "AMBIGUOUS",
+      "predicted_status": "AMOUNT_MISMATCH",
+      "true_exception_type": "AMBIGUOUS",
+      "match_method": "FUZZY_AMOUNT_MISMATCH",
+      "reason": "Fuzzy candidate match (score: 0.949) with amount mismatch: Bank amount \u20b9669.73 vs ledger amount \u20b9656.34 (diff \u20b913.39 / 2.04%)."
+    },
+    {
+      "error_classification": "AMBIGUOUSNESS_ERROR",
+      "case_id": "SYNTH-CASE-000109",
+      "bank_txn_id": "SYNTH-BANK-000109",
+      "ledger_id": "SYNTH-LEDGER-000109",
+      "true_status": "AMBIGUOUS",
+      "predicted_status": "AMOUNT_MISMATCH",
+      "true_exception_type": "AMBIGUOUS",
+      "match_method": "FUZZY_AMOUNT_MISMATCH",
+      "reason": "Fuzzy candidate match (score: 0.950) with amount mismatch: Bank amount \u20b91199.49 vs ledger amount \u20b91223.48 (diff \u20b923.99 / 1.96%)."
+    }
+  ]
+}

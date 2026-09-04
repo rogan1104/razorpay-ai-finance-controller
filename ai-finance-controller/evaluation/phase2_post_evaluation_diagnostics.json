@@ -1,0 +1,463 @@
+{
+  "source_artifacts": {
+    "predictions": "evaluation/phase2_predictions.csv",
+    "metrics": "evaluation/phase2_hybrid_metrics.json"
+  },
+  "benchmark_rows": 324,
+  "selected_threshold": 0.7,
+  "gemini_fallback_calls": 276,
+  "gemini_successful_responses": 166,
+  "gemini_failed_responses": 110,
+  "gemini_metrics_on_successful_responses_only": {
+    "accuracy": 0.2710843373493976,
+    "macro_precision": 0.755968512066073,
+    "macro_recall": 0.2689007901856199,
+    "macro_f1": 0.31749703972445686,
+    "weighted_f1": 0.33413824147643045,
+    "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       1.00      0.19      0.32        21\nEntertainment       1.00      0.16      0.27        19\n         Food       0.14      0.07      0.10        14\n   Healthcare       1.00      0.21      0.35        19\n         Rent       1.00      0.35      0.51        26\n       Salary       1.00      0.33      0.50        18\n     Shopping       0.09      0.69      0.16        16\n    Transport       1.00      0.19      0.32        16\n    Utilities       0.57      0.24      0.33        17\n\n     accuracy                           0.27       166\n    macro avg       0.76      0.27      0.32       166\n weighted avg       0.80      0.27      0.33       166\n",
+    "classification_report_dict": {
+      "Education": {
+        "precision": 1.0,
+        "recall": 0.19047619047619047,
+        "f1-score": 0.32,
+        "support": 21.0
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 0.15789473684210525,
+        "f1-score": 0.2727272727272727,
+        "support": 19.0
+      },
+      "Food": {
+        "precision": 0.14285714285714285,
+        "recall": 0.07142857142857142,
+        "f1-score": 0.09523809523809523,
+        "support": 14.0
+      },
+      "Healthcare": {
+        "precision": 1.0,
+        "recall": 0.21052631578947367,
+        "f1-score": 0.34782608695652173,
+        "support": 19.0
+      },
+      "Rent": {
+        "precision": 1.0,
+        "recall": 0.34615384615384615,
+        "f1-score": 0.5142857142857142,
+        "support": 26.0
+      },
+      "Salary": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.5,
+        "support": 18.0
+      },
+      "Shopping": {
+        "precision": 0.08943089430894309,
+        "recall": 0.6875,
+        "f1-score": 0.15827338129496402,
+        "support": 16.0
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1-score": 0.3157894736842105,
+        "support": 16.0
+      },
+      "Utilities": {
+        "precision": 0.5714285714285714,
+        "recall": 0.23529411764705882,
+        "f1-score": 0.3333333333333333,
+        "support": 17.0
+      },
+      "accuracy": 0.2710843373493976,
+      "macro avg": {
+        "precision": 0.755968512066073,
+        "recall": 0.2689007901856199,
+        "f1-score": 0.31749703972445686,
+        "support": 166.0
+      },
+      "weighted avg": {
+        "precision": 0.7960553013447519,
+        "recall": 0.2710843373493976,
+        "f1-score": 0.33413824147643045,
+        "support": 166.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        4,
+        0,
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        16,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        11,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        4
+      ]
+    ],
+    "classes": [
+      "Education",
+      "Entertainment",
+      "Food",
+      "Healthcare",
+      "Rent",
+      "Salary",
+      "Shopping",
+      "Transport",
+      "Utilities"
+    ],
+    "total_test_samples": 166
+  },
+  "gemini_accuracy_by_group_on_successful_responses_only": {
+    "ambiguous_description": {
+      "rows": 108,
+      "gemini_successful_responses": 64,
+      "gemini_failures": 44,
+      "gemini_accuracy_on_successes": 0.109375,
+      "hybrid_accuracy_excluding_gemini_failures": 0.109375,
+      "hybrid_accuracy_failure_inclusive": 0.06481481481481481
+    },
+    "known_merchant_noisy_description": {
+      "rows": 108,
+      "gemini_successful_responses": 36,
+      "gemini_failures": 24,
+      "gemini_accuracy_on_successes": 0.9444444444444444,
+      "hybrid_accuracy_excluding_gemini_failures": 0.9761904761904762,
+      "hybrid_accuracy_failure_inclusive": 0.7592592592592593
+    },
+    "unseen_merchant": {
+      "rows": 108,
+      "gemini_successful_responses": 66,
+      "gemini_failures": 42,
+      "gemini_accuracy_on_successes": 0.06060606060606061,
+      "hybrid_accuracy_excluding_gemini_failures": 0.06060606060606061,
+      "hybrid_accuracy_failure_inclusive": 0.037037037037037035
+    }
+  },
+  "gemini_failure_count_by_group": {
+    "ambiguous_description": 44,
+    "known_merchant_noisy_description": 24,
+    "unseen_merchant": 42
+  },
+  "hybrid_metrics_excluding_gemini_failed_rows": {
+    "accuracy": 0.43457943925233644,
+    "macro_precision": 0.8316498316498318,
+    "macro_recall": 0.428960780393529,
+    "macro_f1": 0.5022032496837974,
+    "weighted_f1": 0.5045524058754115,
+    "classification_report_str": "               precision    recall  f1-score   support\n\n    Education       1.00      0.37      0.54        27\nEntertainment       1.00      0.36      0.53        25\n         Food       0.67      0.48      0.56        25\n   Healthcare       1.00      0.38      0.55        24\n         Rent       1.00      0.35      0.51        26\n       Salary       1.00      0.33      0.50        18\n     Shopping       0.15      0.80      0.25        25\n    Transport       1.00      0.48      0.65        25\n    Utilities       0.67      0.32      0.43        19\n\n     accuracy                           0.43       214\n    macro avg       0.83      0.43      0.50       214\n weighted avg       0.83      0.43      0.50       214\n",
+    "classification_report_dict": {
+      "Education": {
+        "precision": 1.0,
+        "recall": 0.37037037037037035,
+        "f1-score": 0.5405405405405406,
+        "support": 27.0
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 0.36,
+        "f1-score": 0.5294117647058824,
+        "support": 25.0
+      },
+      "Food": {
+        "precision": 0.6666666666666666,
+        "recall": 0.48,
+        "f1-score": 0.5581395348837209,
+        "support": 25.0
+      },
+      "Healthcare": {
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1-score": 0.5454545454545454,
+        "support": 24.0
+      },
+      "Rent": {
+        "precision": 1.0,
+        "recall": 0.34615384615384615,
+        "f1-score": 0.5142857142857142,
+        "support": 26.0
+      },
+      "Salary": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.5,
+        "support": 18.0
+      },
+      "Shopping": {
+        "precision": 0.15151515151515152,
+        "recall": 0.8,
+        "f1-score": 0.25477707006369427,
+        "support": 25.0
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 0.48,
+        "f1-score": 0.6486486486486487,
+        "support": 25.0
+      },
+      "Utilities": {
+        "precision": 0.6666666666666666,
+        "recall": 0.3157894736842105,
+        "f1-score": 0.42857142857142855,
+        "support": 19.0
+      },
+      "accuracy": 0.43457943925233644,
+      "macro avg": {
+        "precision": 0.8316498316498318,
+        "recall": 0.428960780393529,
+        "f1-score": 0.5022032496837974,
+        "support": 214.0
+      },
+      "weighted avg": {
+        "precision": 0.8323421127159444,
+        "recall": 0.43457943925233644,
+        "f1-score": 0.5045524058754115,
+        "support": 214.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        9,
+        0,
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        16,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        11,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        6
+      ]
+    ],
+    "classes": [
+      "Education",
+      "Entertainment",
+      "Food",
+      "Healthcare",
+      "Rent",
+      "Salary",
+      "Shopping",
+      "Transport",
+      "Utilities"
+    ],
+    "total_test_samples": 214
+  },
+  "hybrid_accuracy_failure_inclusive": {
+    "accuracy": 0.28703703703703703,
+    "valid_correct_predictions": 93,
+    "failed_fallbacks_counted_as_incorrect": 110,
+    "denominator": 324
+  },
+  "per_group": {
+    "ambiguous_description": {
+      "rows": 108,
+      "gemini_successful_responses": 64,
+      "gemini_failures": 44,
+      "gemini_accuracy_on_successes": 0.109375,
+      "hybrid_accuracy_excluding_gemini_failures": 0.109375,
+      "hybrid_accuracy_failure_inclusive": 0.06481481481481481
+    },
+    "known_merchant_noisy_description": {
+      "rows": 108,
+      "gemini_successful_responses": 36,
+      "gemini_failures": 24,
+      "gemini_accuracy_on_successes": 0.9444444444444444,
+      "hybrid_accuracy_excluding_gemini_failures": 0.9761904761904762,
+      "hybrid_accuracy_failure_inclusive": 0.7592592592592593
+    },
+    "unseen_merchant": {
+      "rows": 108,
+      "gemini_successful_responses": 66,
+      "gemini_failures": 42,
+      "gemini_accuracy_on_successes": 0.06060606060606061,
+      "hybrid_accuracy_excluding_gemini_failures": 0.06060606060606061,
+      "hybrid_accuracy_failure_inclusive": 0.037037037037037035
+    }
+  },
+  "failure_diagnostics": [
+    {
+      "fallback_error": "gemini_rate_limited",
+      "gemini_exception_type": "ClientError",
+      "gemini_http_status_code": 429.0,
+      "gemini_provider_message": "429 RESOURCE_EXHAUSTED: free-tier generate_content requests-per-minute quota exceeded.",
+      "count": 110
+    }
+  ]
+}

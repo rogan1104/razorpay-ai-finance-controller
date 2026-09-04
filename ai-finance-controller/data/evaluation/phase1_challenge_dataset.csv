@@ -1,0 +1,325 @@
+challenge_group,transaction_description,category
+known_merchant_noisy_description,UPI-COURSERA-180325,Education
+unseen_merchant,UPI-VENDORAQUILA-180325,Education
+ambiguous_description,POS PURCHASE 180325,Education
+known_merchant_noisy_description, udemy  AHM  txn 489713 ,Education
+unseen_merchant,vendoraquila  AHM  txn 489713,Education
+ambiguous_description,ONLINE TXN 489713,Education
+known_merchant_noisy_description,POS/COURSERA/BLR/281322,Education
+unseen_merchant,POS/VENDORAQUILA/BLR/281322,Education
+ambiguous_description,PAYMENT REF 281322,Education
+known_merchant_noisy_description,COURSERA INDIA PVT LTD PAYREF762176,Education
+unseen_merchant,VENDORAQUILA PAYMENT REF 762176,Education
+ambiguous_description,PAYMENT REF 762176,Education
+known_merchant_noisy_description,UPI-COURSERA-561903,Education
+unseen_merchant,UPI-VENDORAQUILA-561903,Education
+ambiguous_description,POS PURCHASE 561903,Education
+known_merchant_noisy_description, udemy  DEL  txn 550316 ,Education
+unseen_merchant,vendoraquila  DEL  txn 550316,Education
+ambiguous_description,PAYMENT REF 550316,Education
+known_merchant_noisy_description,POS/UDEMY/KOL/803409,Education
+unseen_merchant,POS/VENDORAQUILA/KOL/803409,Education
+ambiguous_description,PAYMENT REF 803409,Education
+known_merchant_noisy_description,UDEMY INDIA PVT LTD PAYREF590885,Education
+unseen_merchant,VENDORAQUILA PAYMENT REF 590885,Education
+ambiguous_description,UPI PAYMENT 590885,Education
+known_merchant_noisy_description,UPI-COURSERA-182922,Education
+unseen_merchant,UPI-VENDORAQUILA-182922,Education
+ambiguous_description,UPI PAYMENT 182922,Education
+known_merchant_noisy_description, udemy  AHM  txn 872461 ,Education
+unseen_merchant,vendoraquila  AHM  txn 872461,Education
+ambiguous_description,ONLINE TXN 872461,Education
+known_merchant_noisy_description,POS/COURSERA/AHM/248706,Education
+unseen_merchant,POS/VENDORAQUILA/AHM/248706,Education
+ambiguous_description,POS PURCHASE 248706,Education
+known_merchant_noisy_description,UDEMY INDIA PVT LTD PAYREF161127,Education
+unseen_merchant,VENDORAQUILA PAYMENT REF 161127,Education
+ambiguous_description,PAYMENT REF 161127,Education
+known_merchant_noisy_description,UPI-BOOKMYSHOW-710126,Entertainment
+unseen_merchant,UPI-VENDORBIRCH-710126,Entertainment
+ambiguous_description,UPI PAYMENT 710126,Entertainment
+known_merchant_noisy_description, spotify  HYD  txn 427515 ,Entertainment
+unseen_merchant,vendorbirch  HYD  txn 427515,Entertainment
+ambiguous_description,UPI PAYMENT 427515,Entertainment
+known_merchant_noisy_description,POS/BOOKMYSHOW/MUM/591912,Entertainment
+unseen_merchant,POS/VENDORBIRCH/MUM/591912,Entertainment
+ambiguous_description,ONLINE TXN 591912,Entertainment
+known_merchant_noisy_description,SPOTIFY INDIA PVT LTD PAYREF930274,Entertainment
+unseen_merchant,VENDORBIRCH PAYMENT REF 930274,Entertainment
+ambiguous_description,PAYMENT REF 930274,Entertainment
+known_merchant_noisy_description,UPI-BOOKMYSHOW-469764,Entertainment
+unseen_merchant,UPI-VENDORBIRCH-469764,Entertainment
+ambiguous_description,POS PURCHASE 469764,Entertainment
+known_merchant_noisy_description, bookmyshow  HYD  txn 168708 ,Entertainment
+unseen_merchant,vendorbirch  HYD  txn 168708,Entertainment
+ambiguous_description,UPI PAYMENT 168708,Entertainment
+known_merchant_noisy_description,POS/BOOKMYSHOW/MUM/516646,Entertainment
+unseen_merchant,POS/VENDORBIRCH/MUM/516646,Entertainment
+ambiguous_description,POS PURCHASE 516646,Entertainment
+known_merchant_noisy_description,SPOTIFY INDIA PVT LTD PAYREF397176,Entertainment
+unseen_merchant,VENDORBIRCH PAYMENT REF 397176,Entertainment
+ambiguous_description,ONLINE TXN 397176,Entertainment
+known_merchant_noisy_description,UPI-NETFLIX-946274,Entertainment
+unseen_merchant,UPI-VENDORBIRCH-946274,Entertainment
+ambiguous_description,PAYMENT REF 946274,Entertainment
+known_merchant_noisy_description, netflix  KOL  txn 666787 ,Entertainment
+unseen_merchant,vendorbirch  KOL  txn 666787,Entertainment
+ambiguous_description,POS PURCHASE 666787,Entertainment
+known_merchant_noisy_description,POS/SPOTIFY/AHM/791058,Entertainment
+unseen_merchant,POS/VENDORBIRCH/AHM/791058,Entertainment
+ambiguous_description,PAYMENT REF 791058,Entertainment
+known_merchant_noisy_description,BOOKMYSHOW INDIA PVT LTD PAYREF857521,Entertainment
+unseen_merchant,VENDORBIRCH PAYMENT REF 857521,Entertainment
+ambiguous_description,POS PURCHASE 857521,Entertainment
+known_merchant_noisy_description,UPI-ZOMATO-315601,Food
+unseen_merchant,UPI-VENDORCYPRESS-315601,Food
+ambiguous_description,UPI PAYMENT 315601,Food
+known_merchant_noisy_description, localtiffinservice  MUM  txn 849462 ,Food
+unseen_merchant,vendorcypress  MUM  txn 849462,Food
+ambiguous_description,UPI PAYMENT 849462,Food
+known_merchant_noisy_description,POS/ZOMATO/AHM/817157,Food
+unseen_merchant,POS/VENDORCYPRESS/AHM/817157,Food
+ambiguous_description,ONLINE TXN 817157,Food
+known_merchant_noisy_description,STARBUCKS INDIA PVT LTD PAYREF524409,Food
+unseen_merchant,VENDORCYPRESS PAYMENT REF 524409,Food
+ambiguous_description,PAYMENT REF 524409,Food
+known_merchant_noisy_description,UPI-DOMINOSPIZZA-600081,Food
+unseen_merchant,UPI-VENDORCYPRESS-600081,Food
+ambiguous_description,ONLINE TXN 600081,Food
+known_merchant_noisy_description, starbucks  MUM  txn 133536 ,Food
+unseen_merchant,vendorcypress  MUM  txn 133536,Food
+ambiguous_description,UPI PAYMENT 133536,Food
+known_merchant_noisy_description,POS/ZOMATO/KOL/495651,Food
+unseen_merchant,POS/VENDORCYPRESS/KOL/495651,Food
+ambiguous_description,POS PURCHASE 495651,Food
+known_merchant_noisy_description,SWIGGY INDIA PVT LTD PAYREF869571,Food
+unseen_merchant,VENDORCYPRESS PAYMENT REF 869571,Food
+ambiguous_description,PAYMENT REF 869571,Food
+known_merchant_noisy_description,UPI-DOMINOSPIZZA-617139,Food
+unseen_merchant,UPI-VENDORCYPRESS-617139,Food
+ambiguous_description,ONLINE TXN 617139,Food
+known_merchant_noisy_description, zomato  PUN  txn 181509 ,Food
+unseen_merchant,vendorcypress  PUN  txn 181509,Food
+ambiguous_description,POS PURCHASE 181509,Food
+known_merchant_noisy_description,POS/STARBUCKS/BLR/642553,Food
+unseen_merchant,POS/VENDORCYPRESS/BLR/642553,Food
+ambiguous_description,POS PURCHASE 642553,Food
+known_merchant_noisy_description,STARBUCKS INDIA PVT LTD PAYREF984463,Food
+unseen_merchant,VENDORCYPRESS PAYMENT REF 984463,Food
+ambiguous_description,POS PURCHASE 984463,Food
+known_merchant_noisy_description,UPI-PRACTOCONSULTATION-993398,Healthcare
+unseen_merchant,UPI-VENDORDRIFT-993398,Healthcare
+ambiguous_description,UPI PAYMENT 993398,Healthcare
+known_merchant_noisy_description, apollopharmacy  BLR  txn 839506 ,Healthcare
+unseen_merchant,vendordrift  BLR  txn 839506,Healthcare
+ambiguous_description,POS PURCHASE 839506,Healthcare
+known_merchant_noisy_description,POS/PRACTOCONSULTATION/DEL/925886,Healthcare
+unseen_merchant,POS/VENDORDRIFT/DEL/925886,Healthcare
+ambiguous_description,ONLINE TXN 925886,Healthcare
+known_merchant_noisy_description,APOLLOPHARMACY INDIA PVT LTD PAYREF213652,Healthcare
+unseen_merchant,VENDORDRIFT PAYMENT REF 213652,Healthcare
+ambiguous_description,PAYMENT REF 213652,Healthcare
+known_merchant_noisy_description,UPI-PRACTOCONSULTATION-996495,Healthcare
+unseen_merchant,UPI-VENDORDRIFT-996495,Healthcare
+ambiguous_description,POS PURCHASE 996495,Healthcare
+known_merchant_noisy_description, practoconsultation  AHM  txn 476162 ,Healthcare
+unseen_merchant,vendordrift  AHM  txn 476162,Healthcare
+ambiguous_description,UPI PAYMENT 476162,Healthcare
+known_merchant_noisy_description,POS/PRACTOCONSULTATION/BLR/400861,Healthcare
+unseen_merchant,POS/VENDORDRIFT/BLR/400861,Healthcare
+ambiguous_description,UPI PAYMENT 400861,Healthcare
+known_merchant_noisy_description,APOLLOPHARMACY INDIA PVT LTD PAYREF794396,Healthcare
+unseen_merchant,VENDORDRIFT PAYMENT REF 794396,Healthcare
+ambiguous_description,POS PURCHASE 794396,Healthcare
+known_merchant_noisy_description,UPI-APOLLOPHARMACY-745351,Healthcare
+unseen_merchant,UPI-VENDORDRIFT-745351,Healthcare
+ambiguous_description,ONLINE TXN 745351,Healthcare
+known_merchant_noisy_description, practoconsultation  MUM  txn 944245 ,Healthcare
+unseen_merchant,vendordrift  MUM  txn 944245,Healthcare
+ambiguous_description,ONLINE TXN 944245,Healthcare
+known_merchant_noisy_description,POS/PRACTOCONSULTATION/HYD/546062,Healthcare
+unseen_merchant,POS/VENDORDRIFT/HYD/546062,Healthcare
+ambiguous_description,POS PURCHASE 546062,Healthcare
+known_merchant_noisy_description,APOLLOPHARMACY INDIA PVT LTD PAYREF314889,Healthcare
+unseen_merchant,VENDORDRIFT PAYMENT REF 314889,Healthcare
+ambiguous_description,ONLINE TXN 314889,Healthcare
+known_merchant_noisy_description,UPI-LANDLORDNEFT-646476,Rent
+unseen_merchant,UPI-VENDORELM-646476,Rent
+ambiguous_description,PAYMENT REF 646476,Rent
+known_merchant_noisy_description, landlordneft  DEL  txn 178884 ,Rent
+unseen_merchant,vendorelm  DEL  txn 178884,Rent
+ambiguous_description,UPI PAYMENT 178884,Rent
+known_merchant_noisy_description,POS/LANDLORDNEFT/CHN/405049,Rent
+unseen_merchant,POS/VENDORELM/CHN/405049,Rent
+ambiguous_description,POS PURCHASE 405049,Rent
+known_merchant_noisy_description,LANDLORDNEFT INDIA PVT LTD PAYREF917721,Rent
+unseen_merchant,VENDORELM PAYMENT REF 917721,Rent
+ambiguous_description,ONLINE TXN 917721,Rent
+known_merchant_noisy_description,UPI-LANDLORDNEFT-511675,Rent
+unseen_merchant,UPI-VENDORELM-511675,Rent
+ambiguous_description,PAYMENT REF 511675,Rent
+known_merchant_noisy_description, landlordneft  DEL  txn 972257 ,Rent
+unseen_merchant,vendorelm  DEL  txn 972257,Rent
+ambiguous_description,PAYMENT REF 972257,Rent
+known_merchant_noisy_description,POS/LANDLORDNEFT/KOL/335025,Rent
+unseen_merchant,POS/VENDORELM/KOL/335025,Rent
+ambiguous_description,PAYMENT REF 335025,Rent
+known_merchant_noisy_description,LANDLORDNEFT INDIA PVT LTD PAYREF504424,Rent
+unseen_merchant,VENDORELM PAYMENT REF 504424,Rent
+ambiguous_description,POS PURCHASE 504424,Rent
+known_merchant_noisy_description,UPI-LANDLORDNEFT-171328,Rent
+unseen_merchant,UPI-VENDORELM-171328,Rent
+ambiguous_description,POS PURCHASE 171328,Rent
+known_merchant_noisy_description, landlordneft  MUM  txn 912341 ,Rent
+unseen_merchant,vendorelm  MUM  txn 912341,Rent
+ambiguous_description,POS PURCHASE 912341,Rent
+known_merchant_noisy_description,POS/LANDLORDNEFT/MUM/733628,Rent
+unseen_merchant,POS/VENDORELM/MUM/733628,Rent
+ambiguous_description,ONLINE TXN 733628,Rent
+known_merchant_noisy_description,LANDLORDNEFT INDIA PVT LTD PAYREF375360,Rent
+unseen_merchant,VENDORELM PAYMENT REF 375360,Rent
+ambiguous_description,ONLINE TXN 375360,Rent
+known_merchant_noisy_description,UPI-EMPLOYERCORPPAYROLL-592215,Salary
+unseen_merchant,UPI-VENDORFABLE-592215,Salary
+ambiguous_description,POS PURCHASE 592215,Salary
+known_merchant_noisy_description, employercorppayroll  BLR  txn 870951 ,Salary
+unseen_merchant,vendorfable  BLR  txn 870951,Salary
+ambiguous_description,PAYMENT REF 870951,Salary
+known_merchant_noisy_description,POS/EMPLOYERCORPPAYROLL/KOL/543485,Salary
+unseen_merchant,POS/VENDORFABLE/KOL/543485,Salary
+ambiguous_description,ONLINE TXN 543485,Salary
+known_merchant_noisy_description,EMPLOYERCORPPAYROLL INDIA PVT LTD PAYREF488883,Salary
+unseen_merchant,VENDORFABLE PAYMENT REF 488883,Salary
+ambiguous_description,ONLINE TXN 488883,Salary
+known_merchant_noisy_description,UPI-EMPLOYERCORPPAYROLL-226201,Salary
+unseen_merchant,UPI-VENDORFABLE-226201,Salary
+ambiguous_description,UPI PAYMENT 226201,Salary
+known_merchant_noisy_description, employercorppayroll  KOL  txn 684861 ,Salary
+unseen_merchant,vendorfable  KOL  txn 684861,Salary
+ambiguous_description,UPI PAYMENT 684861,Salary
+known_merchant_noisy_description,POS/EMPLOYERCORPPAYROLL/HYD/781738,Salary
+unseen_merchant,POS/VENDORFABLE/HYD/781738,Salary
+ambiguous_description,PAYMENT REF 781738,Salary
+known_merchant_noisy_description,EMPLOYERCORPPAYROLL INDIA PVT LTD PAYREF137452,Salary
+unseen_merchant,VENDORFABLE PAYMENT REF 137452,Salary
+ambiguous_description,POS PURCHASE 137452,Salary
+known_merchant_noisy_description,UPI-EMPLOYERCORPPAYROLL-269402,Salary
+unseen_merchant,UPI-VENDORFABLE-269402,Salary
+ambiguous_description,ONLINE TXN 269402,Salary
+known_merchant_noisy_description, employercorppayroll  KOL  txn 230071 ,Salary
+unseen_merchant,vendorfable  KOL  txn 230071,Salary
+ambiguous_description,UPI PAYMENT 230071,Salary
+known_merchant_noisy_description,POS/EMPLOYERCORPPAYROLL/PUN/257666,Salary
+unseen_merchant,POS/VENDORFABLE/PUN/257666,Salary
+ambiguous_description,PAYMENT REF 257666,Salary
+known_merchant_noisy_description,EMPLOYERCORPPAYROLL INDIA PVT LTD PAYREF253533,Salary
+unseen_merchant,VENDORFABLE PAYMENT REF 253533,Salary
+ambiguous_description,PAYMENT REF 253533,Salary
+known_merchant_noisy_description,UPI-LOCALKIRANASTORE-990714,Shopping
+unseen_merchant,UPI-VENDORGROVE-990714,Shopping
+ambiguous_description,POS PURCHASE 990714,Shopping
+known_merchant_noisy_description, reliancetrends  PUN  txn 651206 ,Shopping
+unseen_merchant,vendorgrove  PUN  txn 651206,Shopping
+ambiguous_description,UPI PAYMENT 651206,Shopping
+known_merchant_noisy_description,POS/LOCALKIRANASTORE/CHN/236348,Shopping
+unseen_merchant,POS/VENDORGROVE/CHN/236348,Shopping
+ambiguous_description,POS PURCHASE 236348,Shopping
+known_merchant_noisy_description,AMAZONIN INDIA PVT LTD PAYREF520396,Shopping
+unseen_merchant,VENDORGROVE PAYMENT REF 520396,Shopping
+ambiguous_description,UPI PAYMENT 520396,Shopping
+known_merchant_noisy_description,UPI-MYNTRA-348262,Shopping
+unseen_merchant,UPI-VENDORGROVE-348262,Shopping
+ambiguous_description,POS PURCHASE 348262,Shopping
+known_merchant_noisy_description, amazonin  CHN  txn 497050 ,Shopping
+unseen_merchant,vendorgrove  CHN  txn 497050,Shopping
+ambiguous_description,ONLINE TXN 497050,Shopping
+known_merchant_noisy_description,POS/FLIPKART/HYD/588019,Shopping
+unseen_merchant,POS/VENDORGROVE/HYD/588019,Shopping
+ambiguous_description,POS PURCHASE 588019,Shopping
+known_merchant_noisy_description,LOCALKIRANASTORE INDIA PVT LTD PAYREF958394,Shopping
+unseen_merchant,VENDORGROVE PAYMENT REF 958394,Shopping
+ambiguous_description,ONLINE TXN 958394,Shopping
+known_merchant_noisy_description,UPI-RELIANCETRENDS-864799,Shopping
+unseen_merchant,UPI-VENDORGROVE-864799,Shopping
+ambiguous_description,UPI PAYMENT 864799,Shopping
+known_merchant_noisy_description, amazonin  AHM  txn 427310 ,Shopping
+unseen_merchant,vendorgrove  AHM  txn 427310,Shopping
+ambiguous_description,PAYMENT REF 427310,Shopping
+known_merchant_noisy_description,POS/RELIANCETRENDS/MUM/588543,Shopping
+unseen_merchant,POS/VENDORGROVE/MUM/588543,Shopping
+ambiguous_description,ONLINE TXN 588543,Shopping
+known_merchant_noisy_description,MYNTRA INDIA PVT LTD PAYREF384122,Shopping
+unseen_merchant,VENDORGROVE PAYMENT REF 384122,Shopping
+ambiguous_description,ONLINE TXN 384122,Shopping
+known_merchant_noisy_description,UPI-UBER-206986,Transport
+unseen_merchant,UPI-VENDORHARBOR-206986,Transport
+ambiguous_description,ONLINE TXN 206986,Transport
+known_merchant_noisy_description, rapido  KOL  txn 757265 ,Transport
+unseen_merchant,vendorharbor  KOL  txn 757265,Transport
+ambiguous_description,PAYMENT REF 757265,Transport
+known_merchant_noisy_description,POS/DELHIMETRO/BLR/388611,Transport
+unseen_merchant,POS/VENDORHARBOR/BLR/388611,Transport
+ambiguous_description,PAYMENT REF 388611,Transport
+known_merchant_noisy_description,UBER INDIA PVT LTD PAYREF977638,Transport
+unseen_merchant,VENDORHARBOR PAYMENT REF 977638,Transport
+ambiguous_description,UPI PAYMENT 977638,Transport
+known_merchant_noisy_description,UPI-INDIANOILPETROLPUMP-227135,Transport
+unseen_merchant,UPI-VENDORHARBOR-227135,Transport
+ambiguous_description,POS PURCHASE 227135,Transport
+known_merchant_noisy_description, indianoilpetrolpump  AHM  txn 378959 ,Transport
+unseen_merchant,vendorharbor  AHM  txn 378959,Transport
+ambiguous_description,PAYMENT REF 378959,Transport
+known_merchant_noisy_description,POS/UBER/DEL/966889,Transport
+unseen_merchant,POS/VENDORHARBOR/DEL/966889,Transport
+ambiguous_description,PAYMENT REF 966889,Transport
+known_merchant_noisy_description,DELHIMETRO INDIA PVT LTD PAYREF671347,Transport
+unseen_merchant,VENDORHARBOR PAYMENT REF 671347,Transport
+ambiguous_description,ONLINE TXN 671347,Transport
+known_merchant_noisy_description,UPI-RAPIDO-914978,Transport
+unseen_merchant,UPI-VENDORHARBOR-914978,Transport
+ambiguous_description,PAYMENT REF 914978,Transport
+known_merchant_noisy_description, indianoilpetrolpump  MUM  txn 262631 ,Transport
+unseen_merchant,vendorharbor  MUM  txn 262631,Transport
+ambiguous_description,UPI PAYMENT 262631,Transport
+known_merchant_noisy_description,POS/RAPIDO/HYD/368917,Transport
+unseen_merchant,POS/VENDORHARBOR/HYD/368917,Transport
+ambiguous_description,PAYMENT REF 368917,Transport
+known_merchant_noisy_description,OLACABS INDIA PVT LTD PAYREF236385,Transport
+unseen_merchant,VENDORHARBOR PAYMENT REF 236385,Transport
+ambiguous_description,ONLINE TXN 236385,Transport
+known_merchant_noisy_description,UPI-AIRTELBROADBAND-861077,Utilities
+unseen_merchant,UPI-VENDORIVORY-861077,Utilities
+ambiguous_description,PAYMENT REF 861077,Utilities
+known_merchant_noisy_description, municipalwaterbill  PUN  txn 204382 ,Utilities
+unseen_merchant,vendorivory  PUN  txn 204382,Utilities
+ambiguous_description,POS PURCHASE 204382,Utilities
+known_merchant_noisy_description,POS/MUNICIPALWATERBILL/AHM/119902,Utilities
+unseen_merchant,POS/VENDORIVORY/AHM/119902,Utilities
+ambiguous_description,ONLINE TXN 119902,Utilities
+known_merchant_noisy_description,BESCOMELECTRICITY INDIA PVT LTD PAYREF469197,Utilities
+unseen_merchant,VENDORIVORY PAYMENT REF 469197,Utilities
+ambiguous_description,UPI PAYMENT 469197,Utilities
+known_merchant_noisy_description,UPI-MUNICIPALWATERBILL-762954,Utilities
+unseen_merchant,UPI-VENDORIVORY-762954,Utilities
+ambiguous_description,POS PURCHASE 762954,Utilities
+known_merchant_noisy_description, bescomelectricity  CHN  txn 104776 ,Utilities
+unseen_merchant,vendorivory  CHN  txn 104776,Utilities
+ambiguous_description,UPI PAYMENT 104776,Utilities
+known_merchant_noisy_description,POS/AIRTELBROADBAND/BLR/128719,Utilities
+unseen_merchant,POS/VENDORIVORY/BLR/128719,Utilities
+ambiguous_description,PAYMENT REF 128719,Utilities
+known_merchant_noisy_description,JIOFIBER INDIA PVT LTD PAYREF902719,Utilities
+unseen_merchant,VENDORIVORY PAYMENT REF 902719,Utilities
+ambiguous_description,UPI PAYMENT 902719,Utilities
+known_merchant_noisy_description,UPI-JIOFIBER-430487,Utilities
+unseen_merchant,UPI-VENDORIVORY-430487,Utilities
+ambiguous_description,PAYMENT REF 430487,Utilities
+known_merchant_noisy_description, municipalwaterbill  MUM  txn 140306 ,Utilities
+unseen_merchant,vendorivory  MUM  txn 140306,Utilities
+ambiguous_description,POS PURCHASE 140306,Utilities
+known_merchant_noisy_description,POS/MUNICIPALWATERBILL/AHM/998224,Utilities
+unseen_merchant,POS/VENDORIVORY/AHM/998224,Utilities
+ambiguous_description,PAYMENT REF 998224,Utilities
+known_merchant_noisy_description,MUNICIPALWATERBILL INDIA PVT LTD PAYREF549375,Utilities
+unseen_merchant,VENDORIVORY PAYMENT REF 549375,Utilities
+ambiguous_description,UPI PAYMENT 549375,Utilities

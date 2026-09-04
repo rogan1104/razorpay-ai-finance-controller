@@ -1,0 +1,136 @@
+{
+  "evaluation_timestamp": "2026-08-27T12:20:16.582021+00:00",
+  "predictions_file": "evaluation/phase2_5_reconciliation_predictions.csv",
+  "ground_truth_file": "data/reconciliation/reconciliation_ground_truth.csv",
+  "status": "PHASE_2_5_REFINED_EVALUATION",
+  "total_evaluated_cases": 2000,
+  "overall_accuracy": 0.9485,
+  "macro_avg": {
+    "precision": 0.8174,
+    "recall": 0.8267,
+    "f1_score": 0.8217
+  },
+  "weighted_avg": {
+    "precision": 0.9019,
+    "recall": 0.9485,
+    "f1_score": 0.9244
+  },
+  "per_class_metrics": {
+    "MATCH": {
+      "precision": 0.9333,
+      "recall": 1.0,
+      "f1_score": 0.9655,
+      "support": 1400
+    },
+    "AMOUNT_MISMATCH": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 250
+    },
+    "DUPLICATE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 100
+    },
+    "AMBIGUOUS": {
+      "precision": 0.9709,
+      "recall": 1.0,
+      "f1_score": 0.9852,
+      "support": 100
+    },
+    "UNMATCHED_BANK": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1_score": 0.9796,
+      "support": 75
+    },
+    "UNMATCHED_LEDGER": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 75
+    }
+  },
+  "match_rates": {
+    "ground_truth_match_count": 1400,
+    "correctly_resolved_match_count": 1400,
+    "ground_truth_match_resolution_rate": 1.0,
+    "predicted_matches_in_evaluated_cases": 1500,
+    "predicted_match_rate_in_evaluated_cases": 0.75,
+    "total_predicted_matches_source_level": 1500,
+    "total_predictions_source_level": 2291,
+    "predicted_match_rate_source_level": 0.6547
+  },
+  "throughput": {
+    "total_source_records": 4041,
+    "bank_record_count": 2116,
+    "ledger_record_count": 1925,
+    "processing_time_seconds": 0.086636,
+    "throughput_total_records_per_second": 46643.21,
+    "throughput_bank_records_per_second": 24423.91,
+    "throughput_definition": "total_source_records (bank_records + ledger_records) / processing_time_seconds"
+  },
+  "confusion_matrix": {
+    "MATCH": {
+      "MATCH": 1400,
+      "AMOUNT_MISMATCH": 0,
+      "DUPLICATE": 100,
+      "AMBIGUOUS": 0,
+      "UNMATCHED_BANK": 0,
+      "UNMATCHED_LEDGER": 0
+    },
+    "AMOUNT_MISMATCH": {
+      "MATCH": 0,
+      "AMOUNT_MISMATCH": 250,
+      "DUPLICATE": 0,
+      "AMBIGUOUS": 0,
+      "UNMATCHED_BANK": 0,
+      "UNMATCHED_LEDGER": 0
+    },
+    "DUPLICATE": {
+      "MATCH": 0,
+      "AMOUNT_MISMATCH": 0,
+      "DUPLICATE": 0,
+      "AMBIGUOUS": 0,
+      "UNMATCHED_BANK": 0,
+      "UNMATCHED_LEDGER": 0
+    },
+    "AMBIGUOUS": {
+      "MATCH": 0,
+      "AMOUNT_MISMATCH": 0,
+      "DUPLICATE": 0,
+      "AMBIGUOUS": 100,
+      "UNMATCHED_BANK": 3,
+      "UNMATCHED_LEDGER": 0
+    },
+    "UNMATCHED_BANK": {
+      "MATCH": 0,
+      "AMOUNT_MISMATCH": 0,
+      "DUPLICATE": 0,
+      "AMBIGUOUS": 0,
+      "UNMATCHED_BANK": 72,
+      "UNMATCHED_LEDGER": 0
+    },
+    "UNMATCHED_LEDGER": {
+      "MATCH": 0,
+      "AMOUNT_MISMATCH": 0,
+      "DUPLICATE": 0,
+      "AMBIGUOUS": 0,
+      "UNMATCHED_BANK": 0,
+      "UNMATCHED_LEDGER": 75
+    }
+  },
+  "configuration": {
+    "amount_exact_tolerance": 0.01,
+    "timestamp_window_days": 7.0,
+    "reference_weight": 0.4,
+    "amount_weight": 0.3,
+    "merchant_weight": 0.2,
+    "timestamp_weight": 0.1,
+    "high_confidence_threshold": 0.85,
+    "ambiguity_threshold": 0.7,
+    "ambiguity_margin": 0.05
+  }
+}

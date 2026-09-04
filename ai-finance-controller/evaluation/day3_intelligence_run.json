@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-08-27T12:41:18.808717+00:00",
+  "total_records_processed": 2291,
+  "enrichment_processing_time_seconds": 1.557082,
+  "enrichment_throughput_records_per_second": 1471.34,
+  "phase2_5_reconciliation_throughput_records_per_second": 46643.21,
+  "phase2_5_reconciliation_processing_time_seconds": 0.086636,
+  "reconciliation_status_preserved": true,
+  "categorization_summary": {
+    "successfully_categorized": 2291,
+    "unavailable_categorization": 0,
+    "category_coverage_pct": 100.0,
+    "category_distribution": {
+      "Transport": 1378,
+      "Shopping": 553,
+      "Food": 239,
+      "Entertainment": 121
+    }
+  },
+  "anomaly_summary": {
+    "anomaly_scoring_attempted": 2291,
+    "anomaly_scoring_successful": 0,
+    "anomaly_scoring_unavailable": 2291,
+    "anomalies_detected": 0,
+    "anomaly_limitation_note": "Isolation Forest requires customer historical features (is_new_merchant_for_customer, customer_txn_count_so_far, days_since_last_transaction) which are absent in reconciliation dataset schema. Gracefully marked as unavailable rather than fabricating data."
+  },
+  "priority_summary": {
+    "HIGH": 195,
+    "MEDIUM": 498,
+    "LOW": 1598
+  },
+  "status_level_breakdown": {
+    "MATCH": {
+      "record_count": 1500,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "LOW": 1500
+      }
+    },
+    "AMOUNT_MISMATCH": {
+      "record_count": 250,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "MEDIUM": 250
+      }
+    },
+    "DUPLICATE": {
+      "record_count": 100,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "HIGH": 100
+      }
+    },
+    "AMBIGUOUS": {
+      "record_count": 103,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "MEDIUM": 103
+      }
+    },
+    "UNMATCHED_BANK": {
+      "record_count": 163,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "HIGH": 91,
+        "MEDIUM": 42,
+        "LOW": 30
+      }
+    },
+    "UNMATCHED_LEDGER": {
+      "record_count": 175,
+      "category_coverage_pct": 100.0,
+      "anomaly_coverage_pct": 0.0,
+      "anomaly_rate_pct": 0.0,
+      "priority_distribution": {
+        "MEDIUM": 103,
+        "LOW": 68,
+        "HIGH": 4
+      }
+    }
+  }
+}

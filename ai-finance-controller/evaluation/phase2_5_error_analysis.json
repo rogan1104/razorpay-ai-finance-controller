@@ -1,0 +1,73 @@
+{
+  "evaluation_timestamp": "2026-08-27T12:20:16.591686+00:00",
+  "total_evaluated_cases": 2000,
+  "correct_cases": 1897,
+  "incorrect_cases": 103,
+  "error_rate": 0.0515,
+  "error_count_by_true_status": {
+    "DUPLICATE": 100,
+    "UNMATCHED_BANK": 3
+  },
+  "error_count_by_predicted_status": {
+    "MATCH": 100,
+    "AMBIGUOUS": 3
+  },
+  "error_count_by_error_classification": {
+    "FALSE_MATCH": 100,
+    "WRONG_EXCEPTION_TYPE": 3
+  },
+  "duplicate_case_analysis": {
+    "total_gt_duplicate_cases": 100,
+    "predicted_status_distribution_for_gt_duplicate": {
+      "MATCH": 100
+    },
+    "has_duplicate_flag_count": 100,
+    "explanation": "All 100 ground-truth DUPLICATE cases reference the primary bank transaction ID in the ground-truth file. The Phase 2.5 engine correctly resolves the primary bank transaction with the ledger as MATCH, explicitly records has_duplicate_submission = True and duplicate_group_id, and emits the duplicate bank record (e.g. SYNTH-BANK-DUP-000009) as DUPLICATE with duplicate_of_bank_txn_id = SYNTH-BANK-000009."
+  },
+  "representative_error_examples": [
+    {
+      "error_classification": "FALSE_MATCH",
+      "case_id": "SYNTH-CASE-000009",
+      "bank_txn_id": "SYNTH-BANK-000009",
+      "ledger_id": "SYNTH-LEDGER-000009",
+      "true_status": "DUPLICATE",
+      "predicted_status": "MATCH",
+      "true_exception_type": "DUPLICATE",
+      "match_method": "EXACT_REFERENCE_AMOUNT",
+      "reason": "Reference 'UPI974622', amount (\u20b93009.72), and direction (CREDIT) matched exactly after normalization with timestamp diff of 5.0 mins. [Companion duplicate submission recorded]"
+    },
+    {
+      "error_classification": "FALSE_MATCH",
+      "case_id": "SYNTH-CASE-000013",
+      "bank_txn_id": "SYNTH-BANK-000013",
+      "ledger_id": "SYNTH-LEDGER-000013",
+      "true_status": "DUPLICATE",
+      "predicted_status": "MATCH",
+      "true_exception_type": "DUPLICATE",
+      "match_method": "EXACT_REFERENCE_AMOUNT",
+      "reason": "Reference 'UPI697842', amount (\u20b91885.72), and direction (CREDIT) matched exactly after normalization with timestamp diff of 14.0 mins. [Companion duplicate submission recorded]"
+    },
+    {
+      "error_classification": "WRONG_EXCEPTION_TYPE",
+      "case_id": "SYNTH-CASE-000396",
+      "bank_txn_id": "SYNTH-BANK-000396",
+      "ledger_id": "",
+      "true_status": "UNMATCHED_BANK",
+      "predicted_status": "AMBIGUOUS",
+      "true_exception_type": "MISSING_LEDGER",
+      "match_method": "AMBIGUOUS_FUZZY_DISCREPANCY",
+      "reason": "Ambiguous match (fuzzy discrepancy): Top candidate SYNTH-LEDGER-001004 (ref 'UPI676573', similarity 0.56) has differing amount \u20b9823.87 (diff \u20b939.37)."
+    },
+    {
+      "error_classification": "WRONG_EXCEPTION_TYPE",
+      "case_id": "SYNTH-CASE-000478",
+      "bank_txn_id": "SYNTH-BANK-000478",
+      "ledger_id": "",
+      "true_status": "UNMATCHED_BANK",
+      "predicted_status": "AMBIGUOUS",
+      "true_exception_type": "MISSING_LEDGER",
+      "match_method": "AMBIGUOUS_FUZZY_DISCREPANCY",
+      "reason": "Ambiguous match (fuzzy discrepancy): Top candidate SYNTH-LEDGER-001897 (ref 'UPI535460', similarity 0.67) has differing amount \u20b91384.45 (diff \u20b926.06)."
+    }
+  ]
+}

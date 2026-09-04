@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / testing artifacts
+.pytest_cache/
+.pytest_tmp/
+.coverage
+htmlcov/
+
+# Virtual environments
+.env
+.env.*
+!.env.example
+.venv
+env/
+venv/
+ENV/
+
+# Model artifacts
+
+!models/categorization_pipeline.joblib
+!models/.gitkeep
+
+# Data artifacts (do not commit processed or sensitive client data)
+data/processed/*
+!data/processed/.gitkeep
+
+# OS specific
+.DS_Store
+Thumbs.db

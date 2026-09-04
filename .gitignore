@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python testing/cache
+.pytest_cache/
+.pytest_tmp/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+frontend/**/node_modules/
+
+# Frontend build/output
+frontend/**/dist/
+frontend/**/.output/
+frontend/**/.wrangler/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local/generated files
+*.tmp
+*.temp
+# Internal project instructions
+AGENTS.md
+
+# Duplicate root-level artifacts
+
+/data/
+/evaluation/
+
+# Lovable project metadata
+frontend/finance-flow-monitor-main/.lovable/
