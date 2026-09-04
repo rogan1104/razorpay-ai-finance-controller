@@ -6,6 +6,7 @@ import { DemoCard } from "@/components/DemoCard";
 import { FileUpload } from "@/components/FileUpload";
 import { ProcessingState, type ProcessingStep } from "@/components/ProcessingState";
 import { RunSummary } from "@/components/RunSummary";
+import { ClosingSection } from "@/components/ClosingSection";
 import { Button, Card, Chip, EmptyState, ErrorState, SectionHeading } from "@/components/ui-kit";
 import { useRun } from "@/state/run-context";
 
@@ -224,6 +225,8 @@ function ReconcilePage() {
           glyph="⇅"
         />
       ) : null}
+
+      <ClosingSection />
     </div>
   );
 }

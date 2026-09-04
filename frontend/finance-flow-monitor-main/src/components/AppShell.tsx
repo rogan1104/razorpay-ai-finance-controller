@@ -103,8 +103,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <footer className="border-t border-border px-6 py-5">
         <p className="mx-auto max-w-[1400px] text-xs text-muted-foreground">
-          All figures are produced by the reconciliation and intelligence engine. This console only
-          displays backend results.
+          Close Control · AI Finance Controller · Razorpay AI Buildathon 2026 · Track 04
         </p>
       </footer>
     </div>
