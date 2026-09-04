@@ -75,7 +75,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AI Finance Controller | Reconciliation Operations Console" },
+      { title: "CloseControl — AI Finance Controller" },
+      { name: "application-name", content: "CloseControl" },
       {
         name: "description",
         content:
@@ -83,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:title",
-        content: "AI Finance Controller | Reconciliation Operations Console",
+        content: "CloseControl — AI Finance Controller",
       },
       {
         property: "og:description",

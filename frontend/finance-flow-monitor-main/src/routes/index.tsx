@@ -13,13 +13,13 @@ import { useRun } from "@/state/run-context";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AI Finance Controller | Reconciliation Operations Console" },
+      { title: "CloseControl — AI Finance Controller" },
       {
         name: "description",
         content:
           "Run the bundled synthetic demo dataset or upload bank and ledger CSV extracts to reconcile on the engine.",
       },
-      { property: "og:title", content: "Run Reconciliation — AI Finance Controller" },
+      { property: "og:title", content: "CloseControl — AI Finance Controller" },
       {
         property: "og:description",
         content:

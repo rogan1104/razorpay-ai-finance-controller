@@ -67,9 +67,9 @@ export function AppShell({ children }: { children: ReactNode }) {
               AF
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="text-sm font-semibold text-foreground">AI Finance Controller</span>
+              <span className="text-sm font-semibold text-foreground">CloseControl</span>
               <span className="text-[11px] text-muted-foreground">
-                Reconciliation Operations Console
+                AI Finance Controller
               </span>
             </span>
           </Link>
@@ -103,7 +103,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <footer className="border-t border-border px-6 py-5">
         <p className="mx-auto max-w-[1400px] text-xs text-muted-foreground">
-          Close Control · AI Finance Controller · Razorpay AI Buildathon 2026 · Track 04
+          CloseControl · AI Finance Controller · Razorpay AI Buildathon 2026 · Track 04
         </p>
       </footer>
     </div>

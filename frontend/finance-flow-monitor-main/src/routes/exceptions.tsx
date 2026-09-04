@@ -4,13 +4,13 @@ import { ResultsWorkspace } from "@/components/ResultsWorkspace";
 export const Route = createFileRoute("/exceptions")({
   head: () => ({
     meta: [
-      { title: "AI Finance Controller | Reconciliation Operations Console" },
+      { title: "CloseControl — AI Finance Controller" },
       {
         name: "description",
         content:
           "Filter, sort and inspect reconciliation exceptions with match analysis and supporting intelligence.",
       },
-      { property: "og:title", content: "Exception Review — AI Finance Controller" },
+      { property: "og:title", content: "CloseControl — AI Finance Controller" },
       {
         property: "og:description",
         content: "Review prioritised reconciliation exceptions and their match evidence.",
