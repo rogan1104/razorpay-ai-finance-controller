@@ -1,10 +1,12 @@
-# BookParity
+# CloseControl
 
 ### AI Finance Controller — Reconciliation Operations Console
 
 Razorpay AI Buildathon 2026 · Track 04 — AI Finance Controller
 
-BookParity takes a bank-statement extract and a merchant ledger, then runs a deterministic reconciliation engine that pairs the two books and classifies every leftover as a typed exception. Each decision ships with a reconstructable reason and the similarity evidence a reviewer needs. AI can categorize text and rank the review queue; it never sets, rewrites, or overrides the financial control.
+**CloseControl** is the product. **AI Finance Controller** is the official Track 04 name — and the label on the console. This repository is `ai-finance-controller` so the URL matches the track a judge is scoring.
+
+CloseControl takes a bank-statement extract and a merchant ledger, then runs a deterministic reconciliation engine that pairs the two books and classifies every leftover as a typed exception. Each decision ships with a reconstructable reason and the similarity evidence a reviewer needs. AI can categorize text and rank the review queue; it never sets, rewrites, or overrides the financial control.
 
 > **AI assists the reviewer; deterministic logic controls the reconciliation.**
 
@@ -23,13 +25,13 @@ The 4,041-row figure is the source workload the engine processes. The 2,000-case
 
 ---
 
-## Why BookParity?
+## Why CloseControl?
 
 Bank rows and ledger rows rarely line up as exact strings. Indian payment text is hostile: UPI/POS prefixes, merchant aliases, city codes, truncated references, one-digit-off IDs, and fee-deducted amounts. Exact-match ERP rules miss the fuzzy majority. A black-box LLM that “just matches” is not an auditable control — finance needs a reason it can reconstruct.
 
 Wrong exception type is as expensive as a missed match. A fee deduction is billing. A fuzzy reference is identity. A second submission of the same payout is a duplicate. Those are different desks.
 
-**BookParity is the reconciliation control, not a chatbot.**
+**CloseControl is the reconciliation control, not a chatbot.**
 
 ---
 
