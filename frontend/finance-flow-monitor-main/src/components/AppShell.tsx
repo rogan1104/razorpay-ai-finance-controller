@@ -60,12 +60,14 @@ export function AppShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-30 border-b border-border bg-card/90 backdrop-blur">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-4 px-6 py-3">
           <Link to="/" className="flex items-center gap-2.5">
-            <span
+            <img
+              src="/apple-touch-icon.png"
+              alt=""
               aria-hidden="true"
-              className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground"
-            >
-              AF
-            </span>
+              width={32}
+              height={32}
+              className="h-8 w-8"
+            />
             <span className="flex flex-col leading-tight">
               <span className="text-sm font-semibold text-foreground">CloseControl</span>
               <span className="text-[11px] text-muted-foreground">
